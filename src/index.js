@@ -19,11 +19,12 @@ app.get("/", (req, res) => {
   res.sendFile(join(__dirname, "index.html"));
 });
 
+
 io.on("connection", (socket) => {
   log("User Connected on Socket Server");
   io.on('connection', (socket) => {
         socket.broadcast.emit('hi');
-        io.emit('chat message', 'Connected!');
+        // io.emit('chat message', 'Connected!');
       });
 
   socket.on("disconnect", () => {

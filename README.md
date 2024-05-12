@@ -10,6 +10,12 @@ Load localhost:3000 and it will give you a chat window. It will connect to the s
 
 Send a GET request to http://localhost:3000/api with a JSON body and it should return a dummy data from a dummy service as well as log the data to the console.
 
+
+# Issues
+
+- Chat terminal shows 'Connected' everytime the page is refreshed. SocketIO retains the messages or something?
+
+
 # Author
 
 - Indepreet Singh (ip_v1)
