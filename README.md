@@ -10,6 +10,20 @@ Load localhost:3000 and it will give you a chat window. It will connect to the s
 
 Send a GET request to http://localhost:3000/api with a JSON body and it should return a dummy data from a dummy service as well as log the data to the console.
 
+# Docker
+
+The Dockerfile can be used to bulid an image
+
+```
+docker build . -t sockerio_server
+docker run -p 3000:3000 socketio_server
+```
+
+or 
+
+```
+docker-compose up
+```
 
 # Issues
 

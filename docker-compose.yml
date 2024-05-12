@@ -1,0 +1,11 @@
+services:
+  app:
+    # define app here. Replace 80 with whatyou need it to be
+    build: .
+    ports: 
+      - "80:3000"
+  database:
+    # define database here
+
+volumes:
+  # define storage here
